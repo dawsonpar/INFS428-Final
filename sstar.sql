@@ -60,17 +60,17 @@ ALTER TABLE `delivery` ADD CONSTRAINT `cFK` FOREIGN KEY (`cID`) REFERENCES `cust
 ALTER TABLE `delivery` ADD CONSTRAINT `pFK` FOREIGN KEY (`pID`) REFERENCES `product`(`pID`); 
 ALTER TABLE `delivery` ADD CONSTRAINT `gFK` FOREIGN KEY (`gID`) REFERENCES `guard`(`gID`); 
 
-INSERT INTO `product` (`pID`, `metalType`, `shape`, `price`)
-VALUES ('1', 'gold', 'bullion', '64632.60'),
-('2', 'gold', 'coin', '64.63'),
-('3', 'silver', 'bullion', '806.00'),
-('4', 'silver', 'coin', '0.81'),
-('5', 'platinum', 'bullion', '35854.49'),
-('6', 'platinum', 'coin', '35.85'),
-('7', 'palladium', 'bullion', '49478.85'),
-('8', 'palladium', 'coin', '49.49'); 
+INSERT INTO product
+VALUES (1, 'gold', 'bullion', 64632.60),
+(2, 'gold', 'coin', 64.63),
+(3, 'silver', 'bullion', 806.00),
+(4, 'silver', 'coin', 0.81),
+(5, 'platinum', 'bullion', 35854.49),
+(6, 'platinum', 'coin', 35.85),
+(7, 'palladium', 'bullion', 49478.85),
+(8, 'palladium', 'coin', 49.49);
 
-INSERT INTO "customer' (cID, cFName, cLName)
+INSERT INTO customer
 VALUES 
 (1, 'John', 'Smith'),
 (2, 'Jane', 'Doe'),
@@ -83,7 +83,7 @@ VALUES
 (9, 'David', 'Anderson'),
 (10, 'Olivia', 'Wilson');
 
-INSERT INTO 'guard' (gID, gFName, gLName, payRate, pNumber, streetAddress, city, state, zip)
+INSERT INTO guard
 VALUES
 (1, 'David', 'Smith', 62.50, '123-456-7890', '123 Main St', 'Anytown', 'CA', 12345),
 (2, 'Emily', 'Johnson', 65.00, '234-567-8901', '456 Elm St', 'Anycity', 'NY', 23456),
