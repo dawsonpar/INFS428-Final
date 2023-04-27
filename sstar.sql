@@ -22,7 +22,7 @@ CREATE TABLE `product`
 (`pID` INT NOT NULL ,
 `metalType` VARCHAR(20),
 `shape` VARCHAR(15),
-`price` DECIMAL(5,2)); 
+`price` DECIMAL(8,2)); 
 
 ALTER TABLE `product` ADD PRIMARY KEY(`pID`); 
 
@@ -59,3 +59,13 @@ ALTER TABLE `delivery` ADD PRIMARY KEY(`deliveryID`);
 ALTER TABLE `delivery` ADD CONSTRAINT `cFK` FOREIGN KEY (`cID`) REFERENCES `customer`(`cID`); 
 ALTER TABLE `delivery` ADD CONSTRAINT `pFK` FOREIGN KEY (`pID`) REFERENCES `product`(`pID`); 
 ALTER TABLE `delivery` ADD CONSTRAINT `gFK` FOREIGN KEY (`gID`) REFERENCES `guard`(`gID`); 
+
+INSERT INTO `product` (`pID`, `metalType`, `shape`, `price`)
+VALUES ('001', 'gold', 'bullion', '64632.60'),
+('002', 'gold', 'coin', '64.63'),
+('003', 'silver', 'bullion', '806.00'),
+('004', 'silver', 'coin', '0.81'),
+('005', 'platinum', 'bullion', '35854.49'),
+('006', 'platinum', 'coin', '35.85'),
+('007', 'palladium', 'bullion', '49478.85'),
+('008', 'palladium', 'coin', '49.49'); 
