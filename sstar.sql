@@ -82,3 +82,16 @@ VALUES
 (8, 'Rachel', 'Martinez'),
 (9, 'David', 'Anderson'),
 (10, 'Olivia', 'Wilson');
+
+INSERT INTO 'guard' (gID, gFName, gLName, payRate, pNumber, streetAddress, city, state, zip)
+VALUES
+(1, 'David', 'Smith', 62.50, '123-456-7890', '123 Main St', 'Anytown', 'CA', 12345),
+(2, 'Emily', 'Johnson', 65.00, '234-567-8901', '456 Elm St', 'Anycity', 'NY', 23456),
+(3, 'William', 'Garcia', 60.75, '345-678-9012', '789 Oak St', 'Someville', 'TX', 34567),
+(4, 'Sarah', 'Brown', 64.25, '456-789-0123', '987 Pine St', 'Anystate', 'FL', 45678),
+(5, 'Michael', 'Davis', 61.50, '567-890-1234', '654 Maple St', 'Sometown', 'IL', 56789),
+(6, 'Rachel', 'Rodriguez', 63.75, '678-901-2345', '321 Birch St', 'Anyville', 'NC', 67890),
+(7, 'Olivia', 'Martinez', 66.25, '789-012-3456', '876 Cedar St', 'Anycity', 'PA', 78901),
+(8, 'John', 'Anderson', 62.00, '890-123-4567', '543 Walnut St', 'Somewhere', 'VA', 89012),
+(9, 'Jane', 'Wilson', 61.25, '901-234-5678', '210 Oak St', 'Anycity', 'OH', 90123),
+(10, 'Kevin', 'Taylor', 64.50, '012-345-6789', '777 Elm St', 'Anystate', 'MI', 01234);
