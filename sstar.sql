@@ -61,11 +61,24 @@ ALTER TABLE `delivery` ADD CONSTRAINT `pFK` FOREIGN KEY (`pID`) REFERENCES `prod
 ALTER TABLE `delivery` ADD CONSTRAINT `gFK` FOREIGN KEY (`gID`) REFERENCES `guard`(`gID`); 
 
 INSERT INTO `product` (`pID`, `metalType`, `shape`, `price`)
-VALUES ('001', 'gold', 'bullion', '64632.60'),
-('002', 'gold', 'coin', '64.63'),
-('003', 'silver', 'bullion', '806.00'),
-('004', 'silver', 'coin', '0.81'),
-('005', 'platinum', 'bullion', '35854.49'),
-('006', 'platinum', 'coin', '35.85'),
-('007', 'palladium', 'bullion', '49478.85'),
-('008', 'palladium', 'coin', '49.49'); 
+VALUES ('1', 'gold', 'bullion', '64632.60'),
+('2', 'gold', 'coin', '64.63'),
+('3', 'silver', 'bullion', '806.00'),
+('4', 'silver', 'coin', '0.81'),
+('5', 'platinum', 'bullion', '35854.49'),
+('6', 'platinum', 'coin', '35.85'),
+('7', 'palladium', 'bullion', '49478.85'),
+('8', 'palladium', 'coin', '49.49'); 
+
+INSERT INTO "customer' (cID, cFName, cLName)
+VALUES 
+(1, 'John', 'Smith'),
+(2, 'Jane', 'Doe'),
+(3, 'Michael', 'Johnson'),
+(4, 'Emily', 'Brown'),
+(5, 'William', 'Davis'),
+(6, 'Sarah', 'Garcia'),
+(7, 'Kevin', 'Rodriguez'),
+(8, 'Rachel', 'Martinez'),
+(9, 'David', 'Anderson'),
+(10, 'Olivia', 'Wilson');
