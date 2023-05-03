@@ -95,6 +95,8 @@ VALUES
 (8, 'John', 'Anderson', 62.00, '890-123-4567', '543 Walnut St', 'Somewhere', 'VA', 89012),
 (9, 'Jane', 'Wilson', 61.25, '901-234-5678', '210 Oak St', 'Anycity', 'OH', 90123),
 (10, 'Kevin', 'Taylor', 64.50, '012-345-6789', '777 Elm St', 'Anystate', 'MI', 01234);
+(11, 'John', 'Wilson', 62.00, '890-123-4567', '543 Walnut St', 'Los Angeles', 'CA', 89012),
+(12, 'Jane', 'Martinez', 61.25, '901-234-5678', '210 Oak St', 'Wilits', 'CA', 90123);
 
 INSERT INTO shift
 VALUES (1, '07:00:00', '15:00:00', 2, '2023-01-01'),
