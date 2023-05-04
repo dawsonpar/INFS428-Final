@@ -1,3 +1,5 @@
+CREATE DATABASE sstar;
+
 CREATE TABLE guard
 (`gID` INT NOT NULL ,
 `gFName` VARCHAR(30),
