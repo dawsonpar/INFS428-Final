@@ -9,7 +9,7 @@ DELIMITER ;
 
 -- procedure 2
 DELIMITER $$
-CREATE PROCEDURE getWithdrawals (IN mType VARCHAR(20), IN mShape VARCHAR(15), OUT numWithdrew)
+CREATE PROCEDURE getWithdrawals (IN mType VARCHAR(20), IN mShape VARCHAR(15), OUT numWithdrew INT)
 begin 
     select count(deliveryType) into numWithdrew from delivery where deliveryType = 'withdrawal' and pID = 
     (select pID from product where metalType = mType and shape = mShape);
