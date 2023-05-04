@@ -4,7 +4,7 @@ CREATE TABLE guard
 (`gID` INT NOT NULL ,
 `gFName` VARCHAR(30),
 `gLName` VARCHAR(30),
-`payRate` DECIMAL(3,2),
+`payRate` DECIMAL(4,2),
 `pNumber` VARCHAR(15),
 `streetAddress` VARCHAR(30),
 `city` VARCHAR(30),
