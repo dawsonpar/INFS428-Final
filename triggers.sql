@@ -52,3 +52,4 @@ begin
     where pID = new.pID AND cID = new.cID;
     end if;
 end $$
+delimiter ;
